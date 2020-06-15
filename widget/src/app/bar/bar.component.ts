@@ -7,6 +7,7 @@ declare var $: any;
 })
 export class BarComponent implements OnInit {
 
+  chPeriod: string;
   periodChoices = [
     "January 2017",
     "January 2018",

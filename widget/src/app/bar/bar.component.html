@@ -1,19 +1,11 @@
 <div class="main_right">
 <div class="main_right_select">
-          <select id="country" class="frm-field required sect">
-            <option value="null">Choose Period</option>
-            <option value="null">January 2017</option>
-            <option value="null">January 2018</option> 
-            <option value="null">January 2019</option>      
-            <option value="null">January 2020</option>
-          </select>
+<select #periodChoice [(ngModel)]="chPeriod" id="country">
+  <option *ngFor='let choice of periodChoices'>{{choice}}</option>
+
+</select>
         </div>
 
-
-				 <ul>
-          <li><i></i>Direct</li>
-          <li><i class="color"></i>Paid</li>
-          <li><i class="color1"></i>Organic</li>
 <!--
                 <script type="text/javascript">
           var doughnutData = [
