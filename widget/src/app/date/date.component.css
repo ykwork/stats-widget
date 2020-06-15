@@ -1,0 +1,23 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+.main_left{
+	float:left;
+	width:45%;
+}
+.main_left h2{
+	font-size:2em;
+	color:#444;
+	margin:0 0 2em;
+}
+.main_left h2 span{
+	font-size: .7em;
+    color:#1ABC9C;
+}
+.main_right{
+	float:right;
+	width:45%;
+}
+.clear{clear:both;}/* clear float */
+
+
+

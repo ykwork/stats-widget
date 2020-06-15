@@ -66,23 +66,7 @@ h1{
 .footer p a:hover{
 	color:#fff;
 }
-.main_left{
-	float:left;
-	width:45%;
-}
-.main_left h2{
-	font-size:2em;
-	color:#444;
-	margin:0 0 2em;
-}
-.main_left h2 span{
-	font-size: .7em;
-    color:#1ABC9C;
-}
-.main_right{
-	float:right;
-	width:45%;
-}
+
 select#country {
     background: none;
     border: none;

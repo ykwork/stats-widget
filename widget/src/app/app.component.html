@@ -1,11 +1,4 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
-
 <head>
 <title>Stats Block Widget Flat Responsive Widget Template :: w3layouts</title>
 <!-- for-mobile-apps -->
@@ -17,21 +10,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
 <!-- chart -->
-                  <script src="chart.js"></script>
-<!-- //chart -->
-                  <script src="jquery-1.11.2.min.js"></script>
+<!--!-- //chart -->
+<!--<script type='text/javascript' src="stats-widget/js/jquery-1.11.2.min.js"></script> -->
 <!--<link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> -->
 <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <script type="text/javascript" src="app/bar/chart.js"></script>
+
   <!-- main -->
     <h1>Stats Block Widget</h1>
     <div class="main box box5 shadow5">
       <div class="main_left">
         <h2>January 2016 <span>Stats</span></h2>
         <canvas id="bar" height="195" width="250" style="width: 250px; height: 195px;"></canvas>
-        <script>
+              <script type="text/javascript">
           var barChartData = {
             labels : ["Mon","Tue","Wed","Thu","Fri","Sat","Mon"],
             datasets : [
@@ -52,55 +44,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             ]
             
           };
-            new Chart(document.getElementById("bar").getContext("2d")).Bar(barChartData);
+          
+          new Chart(document.getElementById("bar").getContext("2d")).Bar(barChartData);
         </script>
       </div>
-      <div class="main_right">
-        <div class="main_right_select">
-          <select id="country" onchange="change_country(this.value)" class="frm-field required sect">
-            <option value="null">Change Settings</option>
-            <option value="null">Settings 1</option>
-            <option value="null">Settings 2</option> 
-            <option value="null">Settings 3</option>          
-            <option value="null">Settings 4</option>
-          </select>
-        </div>
-        <div class="diagram">
-          <canvas id="doughnut" height="200" width="200"></canvas>
-          <h4>1,42K <span>Visitors</span></h4>   
-        </div>
-        <script>
-          var doughnutData = [
-              {
-                value: 20,
-                color:"#45668e",
-                highlight: "#1abc9c",
-                label: "Paid"
-              },
-              {
-                value : 50,
-                color : "#5d799b",
-                highlight: "#1abc9c",
-                label: "Direct"
-              },
-              {
-                value : 30,
-                color : "#325279",
-                highlight: "#1abc9c",
-                label: "Organic"
-              }
-            
-            ];
-
-          new Chart(document.getElementById("doughnut").getContext("2d")).Doughnut(doughnutData);           
-        </script>
-        <ul>
-          <li><i></i>Direct</li>
-          <li><i class="color"></i>Paid</li>
-          <li><i class="color1"></i>Organic</li>
-        </ul>
-      </div>
-      <div class="clear"> </div>
+          <!-- Вибір періоду, відображення к-сті відвідувачів -->
+           <app-bar></app-bar>
+           <app-stat></app-stat>
+  
+      <div class="clear"></div>
     </div>
     <div class="footer">
       <p>&copy 2016 Stats Block Widget. All rights reserved | Template by <a href="http://w3layouts.com">W3layouts.</a></p>

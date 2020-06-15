@@ -26,7 +26,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["src/assets/js/chart.js", "src/assets/js/jquery-1.11.2.min.js"]
           },
           "configurations": {
             "production": {
@@ -63,7 +63,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "widget:build"
-          },
+                  },
           "configurations": {
             "production": {
               "browserTarget": "widget:build:production"
@@ -90,7 +90,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": ["src/chart.js"]
+            "scripts": ["src/assets/js/chart.js", "src/assets/js/jquery-1.11.2.min.js"]
           }
         },
         "lint": {
